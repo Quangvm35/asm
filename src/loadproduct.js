@@ -1,4 +1,4 @@
-import { useHistory,  useParams } from "react-router";
+import {  useParams } from "react-router";
 import { useEffect, useState } from "react";
 export default function Load(){
  
@@ -10,7 +10,7 @@ export default function Load(){
       .then((data) => {
         setProduct(data);
       });
-  }, []);
+  }, );
     return(
 <div className="card" style={{ width: "18rem" }} align="center">
       <img src={product.img} className="card-img-top" alt="img"/>

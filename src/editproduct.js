@@ -13,7 +13,7 @@ export default function Edit(props){
         setProduct(data);
         reset(data);
       });
-  }, [reset]);
+  }, );
   const onSubmit = (data) => {
     fetch("https://6153be7e3f4c430017159417.mockapi.io/products/" + id, {
       method: "PUT",
