@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Product(props) {
   const removeProduct = async (id) => {
     try {

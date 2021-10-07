@@ -1,7 +1,7 @@
 import { useHistory,  useParams } from "react-router";
 import { useEffect, useState } from "react";
 export default function Load(){
-  let history = useHistory();
+ 
   const { id } = useParams();
   const [product, setProduct] = useState({});
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function Load(){
   }, []);
     return(
 <div className="card" style={{ width: "18rem" }} align="center">
-      <img src={product.img} className="card-img-top" />
+      <img src={product.img} className="card-img-top" alt="img"/>
       <div className="card-body">
         <h5 className="card-title">Profile</h5>
         <p className="card-text">{product.desc}</p>

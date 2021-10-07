@@ -1,4 +1,4 @@
-import { useHistory, useLocation, useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 export default function Edit(props){
